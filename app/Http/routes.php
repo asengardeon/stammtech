@@ -93,3 +93,7 @@ Route::get('/dbresource-chart', function()
 {
 	return View::make('dbresource-chart');
 });
+
+Route::auth();
+
+Route::get('/home', 'HomeController@index');
